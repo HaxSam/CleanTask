@@ -31,6 +31,6 @@ module.exports = {
 		bundle: true,
 		minify: true,
 		treeshake: true,
-		target: "es2021",
+		target: "es2020",
 	},
 };
