@@ -14,6 +14,8 @@ module.exports = {
 			{ cmd: "postcss", input: [".css"], output: [".css"] },
 		],
 		"@snowpack/plugin-typescript",
+		"@snowpack/plugin-dotenv",
+		"tsconfig-paths-snowpack-plugin"
 	],
 	packageOptions: {
 		installTypes: true,
