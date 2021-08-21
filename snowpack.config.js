@@ -9,10 +9,7 @@ module.exports = {
 		src: "/dist",
 	},
 	plugins: [
-		[
-			"@snowpack/plugin-build-script",
-			{ cmd: "postcss", input: [".css"], output: [".css"] },
-		],
+		"@snowpack/plugin-postcss",
 		"@snowpack/plugin-typescript",
 		"@snowpack/plugin-dotenv",
 		"tsconfig-paths-snowpack-plugin"

@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.svelte"],
   darkMode: false, // or 'media' or 'class'
@@ -7,5 +5,7 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")
+  ],
 }
