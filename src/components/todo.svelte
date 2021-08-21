@@ -10,9 +10,9 @@
 
 </script>
 
-<div class="flex min-w-xs max-w-4xl mx-4 shadow-lg rounded-lg" in:slide>
+<div class="flex sizing shadow-lg rounded-lg bg-white" in:slide>
   <div class="flex items-center flex-grow p-4">
-    <input type="checkbox" bind:checked="{check}" class="bg-gray-200 text-green-500 border-0 w-5 h-5 rounded-md md:w-6 md:h-6 md:rounded-lg lg:w-7 lg:h-7 focus:ring-0" />
+    <input type="checkbox" bind:checked="{check}" class="bg-gray-200 text-green-500 border-0 w-5 h-5 rounded-md md:w-6 md:h-6 md:rounded-lg lg:w-7 lg:h-7 focus:ring-transparent" />
     <p on:click="{() => check = !check}" class="ml-4 md:ml-6 text-sm md:text-base lg:text-lg {check && 'text-gray-500 italic line-through'}">{text}</p>
   </div>
   <button on:click={() => dispatch("delete")} class="w-9">

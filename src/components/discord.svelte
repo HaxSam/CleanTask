@@ -20,7 +20,7 @@
 
 {#key $supabaseSession}
   {#if supabase.auth.user() !== null}
-    <div class="block lg:flex shadow-xl w-20 lg:h-24 lg:w-60 p-4 rounded-md">
+    <div class="block bg-white lg:flex shadow-xl w-20 lg:h-24 lg:w-60 p-4 rounded-md">
       <img class="mx-auto lg:m-0" src="https://maxcdn.icons8.com/Share/icon/Logos/discord_logo1600.png" alt="Discord Logo"/>
       <div class="lg:ml-4 lg:mt-2">
         <p class="hidden text-lg lg:block"><b>Discord</b></p>
