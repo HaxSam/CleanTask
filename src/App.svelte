@@ -37,7 +37,8 @@
 		</div>
 	</header>
  
-	<main class="{mobileInput || 'hidden'} top flex flex-col absolute bg-gray-200 bg-opacity-80 w-screen h-screen">
+	{#if mobileInput}
+	<main class="top flex flex-col absolute bg-gray-200 bg-opacity-80 w-screen h-screen">
 		<button class="bg-gray-700 w-10 h-10 rounded-full mt-10 mr-8 ml-auto" on:click="{closeMobileInput}">
 			<svg class="text-white m-auto fill-current" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
 				<path d="M0 0h24v24H0z" fill="none"/>
@@ -48,6 +49,7 @@
 			<TodoInput on:create={(event) => addTodo(event.detail)} mobile={true} />
 		</div>
 	</main>
+	{/if}
 
 	<main class="flex flex-col items-center h-screen">
 		<div class="flex sticky w-screen">
