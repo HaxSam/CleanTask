@@ -96,11 +96,11 @@
 			{#each $todoStore as todo, index(todo.id)}
 				<Todo text={todo.text} complete={todo.complete} on:delete={() => removeTodo(index)} on:update={() => updateTodo(index)} duration={todo.duration}/>
 			{/each}
-			<div class="h-64"></div>
 		</div>
+		<div class="my-28"></div>
 	</main>
 
-	<footer class="flex sticky bottom-0 select-none z-0">
+	<footer class="flex bg-transparent sticky bottom-0 select-none z-0">
 		<div class="flex">
 			<p class="mr-auto ml-4 mt-auto mb-4">Created by</p>
 			<a href="https://github.com/HaxSam" class="flex mr-auto ml-1 mt-auto mb-3.5">
