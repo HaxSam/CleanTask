@@ -75,20 +75,20 @@
 	</header>
  
 	{#if mobileInput}
-	<main class="top flex flex-row absolute bg-gray-200 bg-opacity-80 w-screen h-screen">
-		<div class="flex w-screen items-center my-auto">
-			<TodoInput on:create={(event) => addTodo(event.detail)} mobile={true} />
-		</div>
-		<button class="bg-gray-600 absolute right-4 w-8 h-8 rounded-full bottom-96 mb-44" on:click="{closeMobileInput}">
-			<svg class="text-white m-auto fill-current" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-				<path d="M0 0h24v24H0z" fill="none"/>
-				<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-			</svg>
-		</button>
-	</main>
+		<main class="flex flex-row absolute top bg-gray-200 bg-opacity-80 w-screen h-screen">
+			<div class="flex w-screen items-center my-auto">
+				<TodoInput on:create={(event) => addTodo(event.detail)} mobile={true} />
+			</div>
+			<button class="bg-gray-600 absolute right-4 w-8 h-8 rounded-full bottom-96 mb-44" on:click="{closeMobileInput}">
+				<svg class="text-white m-auto fill-current" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+					<path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+				</svg>
+			</button>
+		</main>
 	{/if}
 
-	<main class="flex sticky flex-col items-center h-screen">
+	<main class="flex flex-col items-center h-screen">
 		<div class="flex sticky w-screen">
 			<TodoInput on:create={(event) => addTodo(event.detail)} />
 		</div>
@@ -97,7 +97,6 @@
 				<Todo text={todo.text} complete={todo.complete} on:delete={() => removeTodo(index)} on:update={() => updateTodo(index)} duration={todo.duration}/>
 			{/each}
 			<div class="h-64"></div>
-
 		</div>
 	</main>
 
