@@ -6,14 +6,15 @@ import { createEventDispatcher, onMount } from "svelte";
   const dispatch = createEventDispatcher();
 
   function addTodoEvent(event: MouseEvent | KeyboardEvent) {
-    if(!(event instanceof MouseEvent) && event?.key !== "Enter")
+    if(!(event instanceof MouseEvent) && event?.key !== "Enter" || todoText === "")
 			return
     dispatch("create", todoText);
 		todoText = "";
   }
 
 	onMount(() => {
-		(document.querySelector("#TodoInput") as HTMLInputElement).focus();
+		if(mobile)
+			(document.querySelector("#TodoInput") as HTMLInputElement).focus();
 	})
 </script>
 

@@ -5486,6 +5486,11 @@ svelte-dev-helper@^1.1.9:
   resolved "https://registry.yarnpkg.com/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
 
+svelte-dnd-action@^0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/svelte-dnd-action/-/svelte-dnd-action-0.9.9.tgz#2f3b55466e6c6e255d8b17b815d239d01e73c8aa"
+  integrity sha512-DuSfie7xukV3AXlA9vFnIkit97LYNSDpKFmUBgL0RansnBrFvJoFpnsnuUW2ULfsYR1NpqZGmHAsgKQUeBf6Lg==
+
 svelte-hmr@^0.13.2:
   version "0.13.5"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.13.5.tgz#de9b5fdcf0b694616bab2eb708d1c5bdf4043584"
